@@ -1,0 +1,22 @@
+.image{
+  width: 300px;
+  overflow: hidden;
+}
+
+.image img{
+  width: 100%;
+  height: auto;
+}
+
+.product-item{
+    padding: 10px 10px;
+    background-color: rgb(233, 98, 116);
+}
+
+button{
+    padding: 5px 10px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

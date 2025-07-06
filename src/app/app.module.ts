@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { TopHeaderComponent } from './top-header/top-header.component';
 import { TopHeaderMenuComponent } from './top-header/top-header-menu/top-header-menu.component';
+import { HeaderMenuComponent } from './header/header-menu/header-menu.component';
+import { ProductListComponent } from './product-list/product-list.component';
 
 
 
@@ -16,6 +18,8 @@ import { TopHeaderMenuComponent } from './top-header/top-header-menu/top-header-
     HeaderComponent,
     TopHeaderComponent,
     TopHeaderMenuComponent,
+    HeaderMenuComponent,
+    ProductListComponent,
   
   ],
   imports: [
