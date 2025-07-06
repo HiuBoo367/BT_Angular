@@ -1,0 +1,30 @@
+#taikhoan {
+    position: absolute; /* Định vị nút */
+    top: 15px; /* Cách mép trên màn hình 10px */
+    right: 30px; /* Cách mép phải màn hình 10px */
+    padding: 0px; /* Tăng kích thước nút */
+    color: white; /* Màu chữ */
+    text-decoration: none; /* Xóa gạch chân */
+    cursor: pointer; /* Hiển thị con trỏ khi hover */
+}
+
+#hotro {
+    position: absolute; /* Định vị nút */
+    top: 15px; /* Cách mép trên màn hình 10px */
+    right: 150px; /* Cách mép phải màn hình 10px */
+    padding: 0px; /* Tăng kích thước nút */
+    color: white; /* Màu chữ */
+    text-decoration: none; /* Xóa gạch chân */
+    cursor: pointer; /* Hiển thị con trỏ khi hover */
+}
+
+#lienhe {
+    position: absolute; /* Định vị nút */
+    top: 15px; /* Cách mép trên màn hình 10px */
+    right: 270px; /* Cách mép phải màn hình 10px */
+    padding: 0px; /* Tăng kích thước nút */
+    color: white; /* Màu chữ */
+    text-decoration: none; /* Xóa gạch chân */
+    cursor: pointer; /* Hiển thị con trỏ khi hover */
+}
+
