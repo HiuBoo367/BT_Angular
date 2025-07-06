@@ -1,0 +1,18 @@
+<div class="product-list-container"> 
+    <div class="product-item">
+     <div class="image">
+        <img [src]="product.Image" >
+    </div>
+     <p>Tên: {{ product.name }} </p>
+     <p>Giá: {{ product.price + ' VND' }}</p>
+     <p>Màu Sắc: {{ product.color }}</p>
+     <p>Giá Giảm: {{ getDiscountedPrice().toFixed(0) + ' VND' }}</p>
+     <p> {{ product.inStock > 0 ? 'Còn ' + product.inStock + ' SP' : 'Hết Hàng'}}</p>
+     <button [disabled]="!(product.inStock > 0)">Mua Ngay</button>
+     <button (click) = "decrementCartValue()">-</button>
+     <span>{{ addToCart }}</span>
+     <button (click) = "incrementCartValue()">+</button>
+     <!-- <input (input)="getOnNameChange($event)"> -->
+     <!-- <p>name: {{ name }}</p> -->
+    </div>   
+</div>

@@ -4,3 +4,38 @@
 /**{
     font-family: "Manufacturing Consent", "Montserrat", system-ui;
 }*/
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 190px;
+  height: 100%;
+  background-color: #222;
+  color: white;
+}
+
+.top-header-container {
+  position: relative;
+  margin-left: 190px; /* Đẩy toàn bộ phần main ra khỏi sidebar */
+}
+
+.top-header {
+  height: 60px;
+  background-color: #333;
+  color: white;
+  display: flex;
+}
+
+.product-list-container{
+  padding: 20px;
+  height: calc(100vh - 60px); /* Chiều cao còn lại dưới header */
+  overflow-y: auto;
+}

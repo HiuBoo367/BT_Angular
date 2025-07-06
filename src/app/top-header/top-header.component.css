@@ -1,15 +1,5 @@
 .top-header {
-   display: flex; /* Kích hoạt Flexbox */
-    justify-content: center; /* Căn giữa theo chiều ngang */
-    align-items: center; /* Căn giữa theo chiều dọc */
-    height: 100%; /* Chiều cao của phần tử chiếm toàn bộ màn hình */
-    font-size: 30px; /* Tùy chỉnh kích thước chữ */
-    color: rgb(246, 250, 255); /* Màu chữ */
-}
-
-.top-header-container {
-    position: relative; /* Để có thể định vị các nút bên trong */
-    width: 100%; /* Chiếm toàn bộ chiều rộng */
-    height: 60px; /* Chiều cao của phần đầu */
-    background-color: #d36363; /* Màu nền */
+     justify-content: center; /* căn ngang */
+     align-items: center;    /* căn dọc */
+    text-align: center;
 }
