@@ -3,7 +3,7 @@
     top: 15px; /* Cách mép trên màn hình 10px */
     right: 30px; /* Cách mép phải màn hình 10px */
     padding: 0px; /* Tăng kích thước nút */
-    color: white; /* Màu chữ */
+    color: rgb(255, 255, 255); /* Màu chữ */
     text-decoration: none; /* Xóa gạch chân */
     cursor: pointer; /* Hiển thị con trỏ khi hover */
 }
