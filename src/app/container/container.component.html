@@ -1,5 +1,6 @@
 <div class="product-list-container"> 
-    <div class="product-item">
+    <app-search></app-search>
+    <!-- <div class="product-item">
      <div class="image">
         <img [src]="product.Image" >
     </div>
@@ -12,7 +13,6 @@
      <button (click) = "decrementCartValue()">-</button>
      <span>{{ addToCart }}</span>
      <button (click) = "incrementCartValue()">+</button>
-     <!-- <input (input)="getOnNameChange($event)"> -->
-     <!-- <p>name: {{ name }}</p> -->
-    </div>   
+    </div>    -->
+    <product-list></product-list>
 </div>

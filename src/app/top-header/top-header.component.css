@@ -2,4 +2,5 @@
      justify-content: center; /* căn ngang */
      align-items: center;    /* căn dọc */
     text-align: center;
+    font-size: 20px;
 }
