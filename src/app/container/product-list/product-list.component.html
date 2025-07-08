@@ -1,10 +1,19 @@
+<app-filter
+  [all]="totalProductsCount"
+  [inStock]="totalProductsinStock"
+  [outOfStock]="totalProductsOutOfStock"
+  (selectedFilterRadioButtonChanged)="onFilterChanged($event)"
+></app-filter>
 <div class="product--container">
-  <div class="product--item" *ngFor="let prod of products">
+  <div *ngFor="let prod of products">
+    <app-product [product]="prod" *ngIf="selectedFilterRadioButton === 'all' || prod.is_in_inventory.toString() === selectedFilterRadioButton"></app-product>
+  </div>
+  <!-- <div class="product--item" *ngFor="let prod of products">
     <div class="wishlist-sale-container">
       <div class="add-to--wishlist">
         <i class="fa fa-heart-o" aria-hidden="true"></i>
       </div>
-      <!-- <div class="-on-sale-tag">75% OFF</div> -->
+      <div class="on-sale-tag" *ngIf="prod.discountPrice"> {{ ((prod.price - prod.discountPrice) / prod.price * 100) | number: '1.0-0'}}% OFF</div>
     </div>
 
     <div class="product--image">
@@ -18,5 +27,8 @@
     <div class="product--available-colors">
       {{ prod.color.length }} Colors . Best Seller
     </div>
-  </div>
+    <div class="product-is-in-stock" [ngStyle]="{fontWeight: 'bold', color: prod.is_in_inventory ? 'green' : 'red' }">
+      {{prod.is_in_inventory ? 'Còn Hàng':'Hết Hàng'}}
+    </div>
+  </div> -->
 </div>
