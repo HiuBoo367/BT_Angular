@@ -182,8 +182,7 @@ export class ProductListComponent {
 
   selectedFilterRadioButton: string = 'all';
 
-  onFilterChanged(value: string) {
-    console.log(value);
+  onFilterChanged(value: string) {;
     this.selectedFilterRadioButton = value;
   }
 }
