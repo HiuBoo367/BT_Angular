@@ -1,5 +1,5 @@
 <div class="product-list-container"> 
-    <app-search></app-search>
+    <app-search (searchTextChanged)="setSearchText($event)"></app-search>
     <!-- <div class="product-item">
      <div class="image">
         <img [src]="product.Image" >
@@ -14,5 +14,5 @@
      <span>{{ addToCart }}</span>
      <button (click) = "incrementCartValue()">+</button>
     </div>    -->
-    <product-list></product-list>
+    <product-list [searchText]="searchText"></product-list>
 </div>
