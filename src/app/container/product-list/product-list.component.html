@@ -5,9 +5,25 @@
   (selectedFilterRadioButtonChanged)="onFilterChanged($event)"
 ></app-filter>
 <div class="product--container">
-  <div *ngFor="let prod of products">
-    <app-product [product]="prod" *ngIf="selectedFilterRadioButton === 'all' || prod.is_in_inventory.toString() === selectedFilterRadioButton"></app-product>
-  </div>
+  <ng-container *ngFor="let prod of products">
+    <ng-container
+      *ngIf="
+        selectedFilterRadioButton === 'all' ||
+        prod.is_in_inventory.toString() === selectedFilterRadioButton
+      "
+    >
+      <app-product
+        [product]="prod"
+        *ngIf="
+          searchText === '' || prod.name.toLowerCase().includes(searchText)
+        "
+      ></app-product>
+    </ng-container>
+  </ng-container>
+  <!-- *ngIf="selectedFilterRadioButton === 'all' || prod.is_in_inventory.toString() === selectedFilterRadioButton -->
+  <!-- <div *ngFor="let prod of products">
+    <app-product [product]="prod" *ngIf="searchText === '' || prod.name.toLowerCase().includes(searchText)"></app-product>
+  </div> -->
   <!-- <div class="product--item" *ngFor="let prod of products">
     <div class="wishlist-sale-container">
       <div class="add-to--wishlist">

@@ -1,5 +1,5 @@
 <div class="search--product">
-  <input class="search-product-input" [(ngModel)]="searchText" placeholder="Tìm kiếm sản phẩm..." />
+  <input class="search-product-input" [(ngModel)]="searchText" placeholder="Tìm kiếm sản phẩm..." (input)="onsearchTextChanged()"/>
   <button class="btn btn-search" [disabled]="searchText === ''">Search</button>
 </div>
 <div class="search-result-for">
