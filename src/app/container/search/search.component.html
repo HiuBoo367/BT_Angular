@@ -1,7 +1,13 @@
 <div class="search--product">
-  <input class="search-product-input" [(ngModel)]="searchText" placeholder="Tìm kiếm sản phẩm..." (input)="onsearchTextChanged()"/>
-  <button class="btn btn-search" [disabled]="searchText === ''">Search</button>
+  <input
+    class="search-product-input"
+    placeholder="Tìm kiếm sản phẩm..."
+    #searchInput
+  />
+  <button class="btn btn-search" (click)="updateSearchText(searchInput)">Search</button>
 </div>
 <div class="search-result-for">
-  <p *ngIf="searchText != ''"><strong>Kết quả tìm kiếm cho:</strong> {{ searchText }}</p>
+  <p *ngIf="searchText != ''">
+    <strong>Kết quả tìm kiếm cho:</strong> {{ searchText }}
+  </p>
 </div>
