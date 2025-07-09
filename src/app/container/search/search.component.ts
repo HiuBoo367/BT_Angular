@@ -3,23 +3,23 @@ import { Component, EventEmitter, Output } from '@angular/core';
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
-  styleUrls: ['./search.component.css']
+  styleUrls: ['./search.component.css'],
 })
 export class SearchComponent {
-     searchText: string = '';
+  searchText: string = '';
 
+  @Output()
+  searchTextChanged: EventEmitter<string> = new EventEmitter<string>();
 
-     @Output()
-     searchTextChanged: EventEmitter<string> = new EventEmitter<string>();
-     
-     onsearchTextChanged() {
-          this.searchTextChanged.emit(this.searchText);
-     }
+  onsearchTextChanged() {}
 
-     updateSearchText(event: any) {
-      this.searchText = event.target.value;
-     }
-    
-      
+  updateSearchText(inputEL: HTMLInputElement) {
+    // console.log(inputEL.value);
+    this.searchText = inputEL.value;
+    this.searchTextChanged.emit(this.searchText);
+  }
 
+  // updateSearchText(event: any) {
+  //  this.searchText = event.target.value;
+  // }
 }
